@@ -2,14 +2,14 @@ module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
   blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "Budge", // Site title.
-  siteTitleAlt: "Budge | Make Money by Saving.", // Alternative site title for SEO.
+  siteTitle: "Ampro", // Site title.
+  siteTitleAlt: "Ampro | The Personable Printing Company.", // Alternative site title for SEO.
   siteLogo:
     "/logos/logo.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://www.budge.us/", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
-    "Control Your Finances. Forget Tedious Data Entry.", // Website description used for RSS feeds/meta description tag.
+    "Satisy your printing & promotional needs.", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "#", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
