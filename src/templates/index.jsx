@@ -197,7 +197,7 @@ class IndexTemplate extends React.Component {
                   <div className="row">
                     <div className="col left">
                       <div style={{paddingBottom: '1em'}}>
-                        <PageImage imageUrl={titleLogoUrl} widthPx={210} />
+                        <PageImage imageUrl={titleLogoUrl} widthPx={400} />
                       </div>
                       <PageDescription text={config.siteDescription} />
                       <Link
