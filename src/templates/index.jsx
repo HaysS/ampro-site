@@ -201,7 +201,17 @@ class IndexTemplate extends React.Component {
                         <PageImage imageUrl={titleLogoUrl} widthPx={400} />
                       </div>
                       <PageDescription text={config.siteDescription} />
-                      <img src={gifUrl} />
+                      {/*
+                      <Link
+                        to="content"
+                        data-offset="-45"
+                        spy
+                        smooth
+                        duration={500}>
+                        <ProductVote />
+                      </Link>
+                      */}
+                      <PageImage imageUrl={gifUrl} widthPx={600} rounded={true}/>
                       {/*
                       <Link
                         to="content"
