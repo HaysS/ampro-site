@@ -195,24 +195,17 @@ class IndexTemplate extends React.Component {
               */}
               <div className="vertical" style={{background: 'linear-gradient(to right bottom, #fff, #a0a3ff)'}}>
                 <div className="main-header-content inner">
+                  <PageImage imageUrl={titleLogoUrl} widthPx={500} />
                   <div className="row">
                     <div className="col left">
-                      <div style={{paddingBottom: '1em'}}>
-                        <PageImage imageUrl={titleLogoUrl} widthPx={400} />
-                      </div>
                       <PageDescription text={config.siteDescription} />
+                      <h2>Get a Free Quote, Right Now.</h2>
+                      <PageEmailForm />
+                    </div>
+                    <div className="col right">
+                      <PageImage imageUrl={gifUrl} widthPx={650} rounded={true}/>
                       {/*
-                      <Link
-                        to="content"
-                        data-offset="-45"
-                        spy
-                        smooth
-                        duration={500}>
-                        <ProductVote />
-                      </Link>
-                      */}
-                      <PageImage imageUrl={gifUrl} widthPx={600} rounded={true}/>
-                      {/*
+                      <h2 className="step-header" style={styles.stepHeader}>{step4Header1}</h2>
                       <Link
                         to="content"
                         data-offset="-45"
@@ -224,6 +217,9 @@ class IndexTemplate extends React.Component {
                       */}
                     </div>
                   </div>
+                  <br />
+                  <br />
+                  <br />
                 </div>
               </div>
               <Link
@@ -291,22 +287,6 @@ class IndexTemplate extends React.Component {
                       {bulletList(step2BulletPoints)}
                     </div>
                   </div>
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-              <div id="portfolio" style={styles.mainDiv}>
-                <div  style={styles.mainCol}>
-                  <h2 className="step-header" style={styles.stepHeader}>{step3Header1}</h2>
-                  {/*
-                  <h2 style={styles.stepHeader}>{step3Header2}</h2>
-                  */}
-                  <hr style={styles.regLine}/>
-                  <PageImage imageUrl={step3ImgUrl} widthPx={750} />
-                  <p style={{}}>{step3Text}</p>
                 </div>
                 <br />
                 <br />

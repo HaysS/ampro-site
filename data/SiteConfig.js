@@ -9,7 +9,7 @@ module.exports = {
   siteUrl: "https://www.budge.us/", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
-    "Satisfy your printing & promotional needs.", // Website description used for RSS feeds/meta description tag.
+    "Satisfy your promotional printing needs.", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "#", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible

@@ -26,7 +26,7 @@ class PageEmailForm extends React.Component {
           <input type="hidden" name="form-name" value="landing-page-emails" />
           <input type="hidden" name="bot-field" />
           <input required className="input" type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
-          <input className="submit" type="submit" value="CLICK HERE." />
+          <input className="submit" type="submit" value="Submit" />
         </form>
       </div>
     )
