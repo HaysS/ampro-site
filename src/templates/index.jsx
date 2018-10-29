@@ -193,7 +193,7 @@ class IndexTemplate extends React.Component {
               <MainNav overlay={config.siteCover}>
               </MainNav>
               */}
-              <div className="vertical" style={{background: 'linear-gradient(to right bottom, #ffbcbc, #0008ff)'}}>
+              <div className="vertical" style={{background: 'linear-gradient(to right bottom, #fff, #a0a3ff)'}}>
                 <div className="main-header-content inner">
                   <div className="row">
                     <div className="col left">
