@@ -21,6 +21,7 @@ import PageEmailForm from "../components/PageEmailForm/PageEmailForm";
 import ProductVote from "../components/ProductVote/ProductVote";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import FancyButton from "../components/FancyButton/FancyButton";
 
 const step1Header1 = 'Track Your Spending As You Go'
 const step1Header2 = "Enter When You Pay"
@@ -199,29 +200,30 @@ class IndexTemplate extends React.Component {
                   <div className="row">
                     <div className="col left">
                       <PageDescription text={config.siteDescription} />
-                      <h2>Get a Free Quote, Right Now.</h2>
-                      <PageEmailForm />
-                    </div>
-                    <div className="col right">
-                      <PageImage imageUrl={gifUrl} widthPx={650} rounded={true}/>
-                      {/*
-                      <h2 className="step-header" style={styles.stepHeader}>{step4Header1}</h2>
+                      <h3 style={{color: '#7A1F21'}}>
+                        Email: hank@am-pro.me
+                        <br />
+                        Phone: (512) 288 - 0070
+                      </h3>
                       <Link
-                        to="content"
+                        to="signup"
                         data-offset="-45"
                         spy
                         smooth
-                        duration={500}>
-                        <ProductVote />
+                        duration={500}
+                      >
+                        <FancyButton className={"big-text rounded-border"} text={"Get a Free Quote, Right Now."} />
                       </Link>
-                      */}
+                    </div>
+                    <div className="col right">
+                      <PageImage imageUrl={gifUrl} widthPx={650} rounded={true}/>
                     </div>
                   </div>
                 </div>
               </div>
               <Link
                 className="scroll-down icon-arrow-left"
-                to="signup"
+                to="content"
                 data-offset="-45"
                 spy
                 smooth
@@ -250,38 +252,6 @@ class IndexTemplate extends React.Component {
                         <h3>{step1Header2}</h3>
                         <p style={{}}>{step1Text}</p>
                         {bulletList(step1BulletPoints)}
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-              <div id="screens" style={styles.mainDiv}>
-                <div  style={styles.mainCol}>
-                  <h2 className="step-header" style={styles.stepHeader}>{step2Header1}</h2>
-                  {/*
-                  <h2 style={styles.stepHeader}>{step2Header2}</h2>
-                  */}
-                  <hr style={styles.regLine}/>
-                  <div className="row">
-                    <div className="small-col small-left">
-                      <div className="parent stacked-img">
-                        <div className="gifImage stacked-img">
-                          {/*youtubeEmbed()*/}
-                          <img src={allAccountsScreenUrl} className="top-stacked-img" />
-                        </div>
-                        <div className="image2 stacked-img">
-                          <img src={iphone6Img} className="stacked-img" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="small-col small-right text">
-                      <h3>{step2Header2}</h3>
-                      <p style={{}}>{step2Text}</p>
-                      {bulletList(step2BulletPoints)}
                     </div>
                   </div>
                 </div>
