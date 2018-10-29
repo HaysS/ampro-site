@@ -55,6 +55,7 @@ const titleLogoUrl = './logos/text-logo.png'
 const numPadScreenUrl = './images/num-pad-screen.png'
 const allAccountsScreenUrl = './images/all-accounts-screen.png'
 const addTransactionScreenUrl = './images/add-transaction-screen.png'
+const gifUrl = './images/political-signs-gif-trump.gif'
 const iphone6Img = './images/iphone6.png'
 
 const bulletList = (bulletPoints) => {
@@ -200,6 +201,8 @@ class IndexTemplate extends React.Component {
                         <PageImage imageUrl={titleLogoUrl} widthPx={400} />
                       </div>
                       <PageDescription text={config.siteDescription} />
+                      <img src={gifUrl} />
+                      {/*
                       <Link
                         to="content"
                         data-offset="-45"
@@ -208,18 +211,7 @@ class IndexTemplate extends React.Component {
                         duration={500}>
                         <ProductVote />
                       </Link>
-                    </div>
-
-                    <div className="col right">
-                      <div className="parent stacked-img">
-                        <div className="gifImage stacked-img">
-                          {/*youtubeEmbed()*/}
-                          <img src={numPadScreenUrl} className="top-stacked-img" />
-                        </div>
-                        <div className="image2 stacked-img">
-                          <img src={iphone6Img} className="stacked-img" />
-                        </div>
-                      </div>
+                      */}
                     </div>
                   </div>
                 </div>

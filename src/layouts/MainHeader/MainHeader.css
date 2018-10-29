@@ -78,14 +78,7 @@
     .col {
         margin-top: auto;
         margin-bottom: auto;
-    }
-
-    .left {
-        flex: 55%;
-    }
-
-    .right {
-        flex: 35%;
+        margin: auto auto;
     }
 }
 
