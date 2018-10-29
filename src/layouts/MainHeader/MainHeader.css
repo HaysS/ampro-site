@@ -251,7 +251,6 @@
         /* height: auto; Node: duplicate height values included in original Casper css */
         min-height: 240px;
         height: 60vh;
-        padding: 15% 0;
         padding-bottom: 0;
     }
 

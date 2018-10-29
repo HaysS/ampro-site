@@ -217,9 +217,6 @@ class IndexTemplate extends React.Component {
                       */}
                     </div>
                   </div>
-                  <br />
-                  <br />
-                  <br />
                 </div>
               </div>
               <Link
