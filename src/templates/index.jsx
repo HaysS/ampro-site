@@ -48,11 +48,11 @@ const step3Header2 = ''
 const step3Text = ''
 const step3ImgUrl = './images/professional-cash-rain.gif'
 
-const step4Header1 = 'Become an Exclusive Member.'
+const step4Header1 = 'Call me for a free quote: (512) 288 - 0070'
 const step4Header2 = ''
 const step4Text = './images/professional-cash-rain.gif'
 
-const callToAction = 'GET ACCESS NOW!'
+const callToAction = 'Send me a message. I\'ll reply soon.'
 
 const titleLogoUrl = './logos/text-logo.png'
 const numPadScreenUrl = './images/num-pad-screen.png'
@@ -61,6 +61,7 @@ const addTransactionScreenUrl = './images/add-transaction-screen.png'
 const gifUrl = './images/political-signs-gif-trump.gif'
 const iphone6Img = './images/iphone6.png'
 
+const amproBanner = './images/ampro-banner.png'
 const txPins = './images/tx-st-enamel-pins.png'
 const variousPins = './images/various-enamel-pins.png'
 const bushPins = './images/bush-enamel-pins.png'
@@ -240,7 +241,7 @@ class IndexTemplate extends React.Component {
                         smooth
                         duration={500}
                       >
-                        <FancyButton className={"big-text rounded-border"} text={"Get a Free Quote, Right Now."} />
+                        <FancyButton className={"big-text rounded-border"} text={"Get a Free Quote."} />
                       </Link>
                     </div>
                     <div className="col right">
@@ -266,15 +267,7 @@ class IndexTemplate extends React.Component {
                   <hr style={styles.regLine}/>
                   <div className="row">
                     <div className="small-col small-left">
-                      <div className="parent stacked-img">
-                        <div className="gifImage stacked-img">
-                          {/*youtubeEmbed()*/}
-                          <img src={addTransactionScreenUrl} className="top-stacked-img" />
-                        </div>
-                        <div className="image2 stacked-img">
-                          <img src={iphone6Img} className="stacked-img" />
-                        </div>
-                      </div>
+                      <PageImage imageUrl={amproBanner} />
                     </div>
                     <div className="small-col small-right text">
                         <h3>{step1Header2}</h3>
