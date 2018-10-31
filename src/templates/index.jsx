@@ -23,14 +23,15 @@ import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 import FancyButton from "../components/FancyButton/FancyButton";
 
-const step1Header1 = 'Track Your Spending As You Go'
-const step1Header2 = "Enter When You Pay"
-const step1Text = "Buying groceries, gas, or items online? Just enter the final total after you pay. We take care of the rest."
+const step1Header1 = 'Services & Products'
+const step1Header2 = "We offer a huge variety of custom products"
+const step1Text = "Whether you have you have your own design or you need one of our designers to create one for you, we guarantee that you will be satisfied with the finished product each and every time."
 const step1BulletPoints = [
-    ['Tired of tedious data entry?', 'Just enter your expense after you pay. That\'s it.'],
-    ['Forget sitting to input numbers all day.', 'Enter as you go and rest easy.'], 
-    ['Stop the late fees.', 'Get reminders on recurring bills before you get in a rush to pay them.'], 
-  ]
+  'Political Campaign Supplies',
+  'Banners',
+  'Buttons',
+  'Bumper Stickers',
+]
 
 const step2Header1 = 'See How You Can Easily Save'
 const step2Header2 = 'Find Where You Can Save'
@@ -59,15 +60,19 @@ const addTransactionScreenUrl = './images/add-transaction-screen.png'
 const gifUrl = './images/political-signs-gif-trump.gif'
 const iphone6Img = './images/iphone6.png'
 
+const txPins = './images/tx-st-enamel-pins.png'
+const variousPins = './images/various-enamel-pins.png'
+const bushPins = './images/bush-enamel-pins.png'
+const politicStickers = './images/politcal-stickers.png'
+const politicButtons = './images/politcal-buttons.png'
+
+
+
 const bulletList = (bulletPoints) => {
   const listElements = bulletPoints.map((bulletPoint) => {
-    const boldText = bulletPoint[0]
-    const regText = bulletPoint[1]
-
     return(
       <li>
-        <strong>{boldText}</strong>
-        <p>{regText}</p>
+        <strong>{bulletPoint}</strong>
       </li>
     )
   })
@@ -76,6 +81,28 @@ const bulletList = (bulletPoints) => {
     <ul style={{textAlign: 'left'}}>
       {listElements}
     </ul>
+  )
+}
+
+const bulletList2Col = (bulletPoints) => {
+  // console.log(bulletPoints.forEach((bulletPoint) => {console.log(bulletPoint)}))
+  // const half_length = Math.ceil(bulletPoints.length / 2);    
+  // const leftSide = bulletPoints.splice(0,half_length);
+  // const rightSide = bulletPoints.splice(half_length, bulletPoints.length)
+
+  return(
+    <div>
+      {/*
+         style={{display: 'flex', flexDirection: 'row'}}
+      <div style={{}}>
+        {bulletList(leftSide)}
+      </div>
+      <div style={{}}>
+        {bulletList(rightSide)}
+      </div>
+      */}
+      {bulletList(bulletPoints)}
+    </div>
   )
 }
 
@@ -251,7 +278,29 @@ class IndexTemplate extends React.Component {
                     <div className="small-col small-right text">
                         <h3>{step1Header2}</h3>
                         <p style={{}}>{step1Text}</p>
-                        {bulletList(step1BulletPoints)}
+                        {bulletList2Col(step1BulletPoints)}
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <br />
+              </div>
+            </MainContent>
+            <MainContent>
+              <div id="portfolio" style={styles.mainDiv}>
+                <div  style={styles.mainCol}>
+                  <h2 className="step-header" style={styles.stepHeader}>{step2Header2}</h2>
+                  <hr style={styles.regLine}/>
+                  <div className="row">
+                    <div className="small-col small-left">
+                          <PageImage imageUrl={politicButtons} width ={400}/>
+                          <PageImage imageUrl={txPins} width ={400}/>
+                          <PageImage imageUrl={bushPins} width ={400}/>
+                    </div>
+                    <div className="small-col small-right">
+                          <PageImage imageUrl={politicStickers} width ={400}/>
+                          <PageImage imageUrl={variousPins} width ={400}/>
                     </div>
                   </div>
                 </div>
@@ -267,23 +316,6 @@ class IndexTemplate extends React.Component {
                   {/*
                   <h2 style={styles.stepHeader}>{step4Header2}</h2>
                   */}
-
-                  <br />
-
-                  <div className="row" style={{width: '560'}}>
-                    <div style={styles.circleImage} className="multi-col">
-                      <PageImage imageUrl={'./images/person-1.jpg'} widthPx={110} rounded={true} />
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-2.jpg'} widthPx={110} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-3.jpg'} widthPx={110} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-4.jpg'} widthPx={110} rounded={true}/>
-                    </div>
-                  </div>
                   <br />
                     {this.showSignup()}
                 </div>
