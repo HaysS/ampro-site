@@ -228,9 +228,9 @@ class IndexTemplate extends React.Component {
                     <div className="col left">
                       <PageDescription text={config.siteDescription} />
                       <h3 style={{color: '#7A1F21'}}>
-                        Email: hank@am-pro.me
+                        CALL ME: (512) 288 - 0070
                         <br />
-                        Phone: (512) 288 - 0070
+                        Email: hank@am-pro.me
                       </h3>
                       <Link
                         to="signup"
