@@ -17,6 +17,7 @@ import MenuButton from "../components/MenuButton/MenuButton";
 import PageTitle from "../components/PageTitle/PageTitle";
 import PageImage from "../components/PageImage/PageImage";
 import PageDescription from "../components/PageDescription/PageDescription";
+import PageContactForm from "../components/PageContactForm/PageContactForm";
 import PageEmailForm from "../components/PageEmailForm/PageEmailForm";
 import ProductVote from "../components/ProductVote/ProductVote";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
@@ -179,14 +180,14 @@ class IndexTemplate extends React.Component {
       return(
         <div id="signup" style={styles.signupSmall}>
           <h2 style={{color: "black", paddingBottom: '20px'}}>{callToAction}</h2>
-          <PageEmailForm />
+          <PageContactForm />
         </div>
       )
     else
       return(
         <div id="signup" style={styles.signup}>
           <h2 style={{color: "black", paddingBottom: '20px'}}>{callToAction}</h2>
-          <PageEmailForm />
+          <PageContactForm />
         </div>
       )
   }
