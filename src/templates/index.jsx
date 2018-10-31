@@ -35,7 +35,7 @@ const step1BulletPoints = [
 ]
 
 const step2Header1 = 'See How You Can Easily Save'
-const step2Header2 = 'Find Where You Can Save'
+const step2Header2 = 'Our Work'
 const step2Text = "Wondering where your money is going? We'll show you. "
 const step2BulletPoints = [
     ['Get expert advice on how to maximize your finances.', 'We give you immediate ways to save.'],

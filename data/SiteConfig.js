@@ -45,7 +45,7 @@ module.exports = {
   ],
   // Copyright string for the footer of the website and RSS feed.
   copyright: {
-    label: "Ampro Productions LLC", // Label used before the year
+    label: "7202 Smokey Hill Rd., Austin, TX, 78736 | Ampro Productions LLC", // Label used before the year
     year: "2018", // optional, set specific copyright year or range of years, defaults to current year
     url: "" // optional, set link address of copyright, defaults to site root
   },
