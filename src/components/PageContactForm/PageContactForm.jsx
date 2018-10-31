@@ -27,7 +27,7 @@ class PageContactForm extends React.Component {
           <input type="hidden" name="form-name" value="landing-page-emails" />
           <input type="hidden" name="bot-field" />
           <input required className="input" type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
-          <input required className="input" type="text" name="message" value={this.state.message} placeholder={"Type your message here..."} onChange={this.handleChange} />
+          <textarea required className="input" style={{resize: 'vertical'}} type="text" name="message" value={this.state.message} placeholder={"Type your message here..."} onChange={this.handleChange} />
           <input className="submit" type="submit" value="Submit" />
         </form>
       </div>
